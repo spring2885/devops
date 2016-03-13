@@ -5,3 +5,4 @@ RUN mkdir -p /www && \
 # COPY /etc/apache2/certs/* /usr/local/apache2/certs/
 COPY ./httpd-ssl.conf /usr/local/apache2/conf/extra/httpd-ssl.conf
 COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
+COPY ./frontend/generated/ /www/

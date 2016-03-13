@@ -1,0 +1,3 @@
+[submodule "docker/frontend/frontend"]
+	path = docker/frontend/frontend
+	url = https://github.com/spring2885/frontend.git
