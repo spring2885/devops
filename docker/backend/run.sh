@@ -1,1 +1,5 @@
-docker run -it -e SPRING_PROFILES_ACTIVE=prod -p 8888:8888 spring2885-backend
+docker run -it \
+  -v /home/rcleveng/secure/application-prod.properties:/config/application-prod.properties \
+  -e SPRING_PROFILES_ACTIVE=prod \
+  --net=host \
+  spring2885-backend
