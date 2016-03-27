@@ -7,6 +7,7 @@ echo "Local IP address: ${HOST_MYSQL_IP}"
 echo "Starting docker backend container"
 
 docker run -it \
+  --rm \
   --name spring2885-backend \
   -v /home/rcleveng/secure/application-prod.properties:/config/application-prod.properties \
   -e SPRING_PROFILES_ACTIVE=prod \
