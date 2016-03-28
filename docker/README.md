@@ -3,7 +3,13 @@
 The docker subdirectory contains the source of the
 various docker containers used by the Spring2885 project.
 
-Containers:
+## Installing Docker.
+
+Visit https://docs.docker.com/engine/installation/ for instructions
+on how to install docker for your machine.  Once installed
+you can use the shell scripts to build and run your containers.
+
+### Containers:
 * frontend - contains the Apache2 server and the frontend code.
 * backend - contains the backend server.
 
