@@ -98,3 +98,38 @@ the following commands:
 sudo gcloud docker pull  us.gcr.io/spring2885-cloud/spring2885-backend
 sudo gcloud docker pull  us.gcr.io/spring2885-cloud/spring2885-frontend
 ```
+## Setting up Google Cloud.
+
+Google Cloud Platform frees you from the overhead of managing infrastructure, provisioning servers and configuring networks. To let innovators innovate and let coders, well, just code. 
+
+1. Install google cloud by going to the website https://cloud.google.com/sdk/downloads
+2. Move the downloaded file to your home folder
+3. Open a new terminal window
+4. Add gcloud in your filepath
+5. Install gcloud
+
+```
+cd [home folder]
+cd google-cloud-sdk
+./install.sh
+```
+6. Open a new terminal window to make sure gcloud is in your path.
+
+```
+gcloud
+gcloud auth login 
+gcloud config set project spring2885-cloud
+gcloud compute ssh staging
+```
+
+7. Choose number [7] (us-central1-b)
+8. To view the different staging, type
+
+```
+sudo docker ps
+```
+
+You will now have two container ids (frontend and backend). To view the logs of either containers..
+```
+sudo docker logs -f[container id]
+```
